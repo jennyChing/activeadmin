@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140902140555) do
+ActiveRecord::Schema.define(version: 20140902140556) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20140902140555) do
     t.datetime "updated_at"
     t.string   "title"
     t.string   "media"
-    t.string   "content"
+    t.text     "content",    limit: 255
   end
 
   create_table "redactor_assets", force: true do |t|

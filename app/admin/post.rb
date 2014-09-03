@@ -9,7 +9,9 @@ ActiveAdmin.register Post do
   form do |f|
     f.inputs "文章資訊" do
       f.input :title
+      f.input :media
       f.input :content, input_html: { class: "redactor" }
     end
+    f.actions
   end
 end

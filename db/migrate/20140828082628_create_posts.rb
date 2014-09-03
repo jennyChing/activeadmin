@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.string :media
       t.string :content
+      t.string :time
       f.input :image
     end
   end
